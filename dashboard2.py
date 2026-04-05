@@ -1,17 +1,4 @@
-"""
-╔══════════════════════════════════════════════════════╗
-║  Dashboard de Atendimento — Python + Flask           ║
-║  Integração: IXC Soft (webservice/v1)                ║
-╠══════════════════════════════════════════════════════╣
-║  INSTALAÇÃO (apenas uma vez):                        ║
-║    pip install flask requests                        ║
-║                                                      ║
-║  RODAR:                                              ║
-║    python dashboard.py                               ║
-║                                                      ║
-║  Abra: http://localhost:3000                         ║
-╚══════════════════════════════════════════════════════╝
-"""
+
 
 from flask import Flask, jsonify, render_template_string
 import requests
@@ -22,10 +9,10 @@ from datetime import datetime, timedelta
 app = Flask(__name__)
 
 # ─── CONFIG IXC SOFT ────────────────────────────────────────────
-# Troque para False quando tiver as credenciais do IXC Soft
+# Trocar para False quando tiver as credenciais do IXC Soft
 USE_MOCK = True
 
-# Preencha com os dados do seu servidor IXC Soft:
+# Preencher com os dados do seu servidor IXC Soft:
 IXC_HOST  = "SEU_HOST_AQUI"          # ex: "suaempresa.ixcsoft.com.br"
 IXC_TOKEN = "SEU_TOKEN_AQUI"         # token gerado no IXC Soft
 
